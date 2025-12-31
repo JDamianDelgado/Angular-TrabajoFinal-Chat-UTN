@@ -1,0 +1,11 @@
+.contenedorGeneral {
+  background-color: aquamarine;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contenedorContactos {
+  display: flex;
+}
+main {
+  display: flex;
+}

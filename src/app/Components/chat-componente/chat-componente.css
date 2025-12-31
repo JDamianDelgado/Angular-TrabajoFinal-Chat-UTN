@@ -1,0 +1,51 @@
+.headerChat button {
+  all: unset;
+  font-size: 1.5rem;
+  background-color: #125aa0;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: white;
+  margin-top: 2rem;
+}
+
+.contenedorGeneralChat {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  justify-content: start;
+  text-align: center;
+}
+.listaChats {
+  flex: 1;
+  overflow-y: scroll;
+  margin-top: 1rem;
+}
+.listaChats::-webkit-scrollbar {
+  background-color: transparent;
+}
+.contendorContactosChat {
+  display: flex;
+  cursor: pointer;
+  padding: 0.5rem;
+  height: 4vw;
+  border: solid 1px rgb(106, 156, 106);
+  width: 95%;
+}
+.contenedorTexto {
+  display: block;
+  width: 70%;
+  overflow: hidden;
+}
+.contenedorTexto span {
+  width: 80%;
+  overflow: hidden;
+  margin: 1rem;
+}
+img {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  justify-content: start;
+}

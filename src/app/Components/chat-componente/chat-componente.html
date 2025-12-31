@@ -1,0 +1,18 @@
+<div class="contenedorGeneralChat">
+  <div class="headerChat">
+    <button (click)="nuevoChat()">Nuevo chat</button>
+  </div>
+  <div class="listaChats">
+    @for(chat of chatService.chats(); track chat.id){
+    <div (click)="openChat(chat.id)" class="contendorContactosChat">
+      <img src="{{ chat.image }}" alt="{chat.name}" />
+      <div class="contenedorTexto">
+        <h2>{{ chat.name }}</h2>
+        <span>{{ chat.ultimoMensaje || '' }}</span>
+      </div>
+    </div>
+    } @empty {
+    <h1>No hay chats aun</h1>
+    }
+  </div>
+</div>

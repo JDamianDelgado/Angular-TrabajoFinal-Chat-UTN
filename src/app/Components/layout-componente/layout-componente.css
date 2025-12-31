@@ -1,0 +1,15 @@
+.contenedorGeneral {
+  height: 98vh;
+  width: 99.5vw;
+  display: flex;
+  gap: 0.2vw;
+}
+.contenedorContactos {
+  width: 14vw;
+
+  background-color: rgba(85, 74, 74, 0.452);
+}
+.contenedorChat {
+  width: 85vw;
+  background-color: rgb(145, 153, 150);
+}
