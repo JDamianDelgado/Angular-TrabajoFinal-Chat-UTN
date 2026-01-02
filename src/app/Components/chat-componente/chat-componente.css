@@ -9,11 +9,31 @@
   all: unset;
   font-size: 1.5vh;
   background-color: #125aa0;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 2rem;
   color: white;
-  margin-top: 2vh;
+  margin-top: 0.4rem;
   margin-bottom: 1.5vh;
+}
+.findChat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.findChat input {
+  margin-top: 0.5rem;
+  border-radius: 2rem;
+  border: none;
+  width: 70%;
+  padding: 2%;
+}
+.findChatButton {
+  display: flex;
+
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
 }
 .listaChats {
   flex: 1;
@@ -64,6 +84,9 @@
   .contenedorGeneralChat {
     width: 30vw;
   }
+  .findChat {
+    display: none;
+  }
   .headerChat button {
     font-size: 1rem;
   }
@@ -91,7 +114,9 @@
     font-size: 0.6rem;
     padding: 0.5rem;
   }
-
+  .findChat {
+    display: none;
+  }
   .listaChats {
     flex: 1;
 

@@ -1,9 +1,17 @@
 <div class="contenedorGeneralChat">
   <div class="headerChat">
+    <div class="findChat">
+      <input type="text" [(ngModel)]="name" placeholder="Buscar..." />
+
+      <div class="findChatButton">
+        <button (click)="findChat()">Buscar</button>
+        <button (click)="cancelarBusqueda()">Borrar</button>
+      </div>
+    </div>
     <button (click)="nuevoChat()">Nuevo chat</button>
   </div>
   <div class="listaChats">
-    @for(chat of chatService.chats(); track chat.id){
+    @for(chat of (chatFiltrados.length ? chatFiltrados : chatService.chats()); track chat.id){
     <div (click)="openChat(chat.id)" class="contendorContactosChat">
       <img src="{{ chat.image }}" alt="{chat.name}" />
       <div class="contenedorTexto">

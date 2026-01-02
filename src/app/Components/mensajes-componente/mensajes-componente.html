@@ -6,6 +6,8 @@
     <div class="BarraContactoChatTexto">
       <h2>{{ chatSignal()?.name }}</h2>
 
+      <span>Ultima conexion : {{ chatSignal()?.listaMensajes ?? [] | ultimaConexion }}</span>
+      <hr />
       <span>{{ chatSignal()?.listaMensajes?.length }} mensajes</span>
     </div>
   </div>

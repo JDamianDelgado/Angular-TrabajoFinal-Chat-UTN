@@ -4,10 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { Chat } from '../../../Interfaces/chat';
 import { ActivatedRoute } from '@angular/router';
 import { ChatService } from '../../Service/chat-service';
+import { UltimaConexionPipe } from '../../Pipes/ultima-conexion-pipe';
 
 @Component({
   selector: 'app-mensajes-componente',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, UltimaConexionPipe],
   templateUrl: './mensajes-componente.html',
   styleUrl: './mensajes-componente.css',
 })

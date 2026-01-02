@@ -65,4 +65,17 @@ export class ChatService {
 
     return newMensaje;
   }
+
+  findName(name: string): Chat[] {
+    if (!name.trim()) {
+      return this._chats();
+    }
+    return this._chats().filter((chat) =>
+      chat.name
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .includes(name.toLowerCase())
+    );
+  }
 }
