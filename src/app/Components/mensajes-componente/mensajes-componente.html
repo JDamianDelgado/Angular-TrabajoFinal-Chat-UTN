@@ -1,34 +1,36 @@
-@if(chatSignal()){
+<div class="contenedorMensajesChat">
+  @if(chatSignal()){
 
-<div class="BarraContactoChat">
-  <img src="{{ chatSignal()?.image }}" alt="{{ chatSignal()?.name }}" />
-  <div class="BarraContactoChatTexto">
-    <h2>{{ chatSignal()?.name }}</h2>
+  <div class="BarraContactoChat">
+    <img src="{{ chatSignal()?.image }}" alt="{{ chatSignal()?.name }}" />
+    <div class="BarraContactoChatTexto">
+      <h2>{{ chatSignal()?.name }}</h2>
 
-    <span>{{ chatSignal()?.listaMensajes?.length }} mensajes</span>
+      <span>{{ chatSignal()?.listaMensajes?.length }} mensajes</span>
+    </div>
   </div>
-</div>
 
-<div class="mensajesChat">
-  @for(mensaje of chatSignal()?.listaMensajes?? []; track mensaje.id){ @if(mensaje.fromMe===true){
-  <div class="me">
-    <p>{{ mensaje.texto }}</p>
-    <span>{{ formatDate(mensaje.date) }}</span>
+  <div class="mensajesChat">
+    @for(mensaje of chatSignal()?.listaMensajes?? []; track mensaje.id){ @if(mensaje.fromMe===true){
+    <div class="me">
+      <p>{{ mensaje.texto }}</p>
+      <span>{{ formatDate(mensaje.date) }}</span>
+    </div>
+    } @else {
+    <div class="user">
+      <p>{{ mensaje.texto }}</p>
+      <span>{{ formatDate(mensaje.date) }}</span>
+    </div>
+    } } @empty{
+    <div>No hay mensajes</div>
+    }
   </div>
+  <form class="nuevoMensaje" (ngSubmit)="send()">
+    <input name="text" [(ngModel)]="newText" placeholder="Escriba un mensaje..." required="" />
+    <button type="submit">Enviar</button>
+  </form>
+
   } @else {
-  <div class="user">
-    <p>{{ mensaje.texto }}</p>
-    <span>{{ formatDate(mensaje.date) }}</span>
-  </div>
-  } } @empty{
-  <div>No hay mensajes</div>
+  <h1>Selecciona un chat</h1>
   }
 </div>
-<form class="nuevoMensaje" (ngSubmit)="send()">
-  <input name="text" [(ngModel)]="newText" placeholder="Escriba un mensaje..." required="" />
-  <button type="submit">Enviar</button>
-</form>
-
-} @else {
-<h1>Selecciona un chat</h1>
-}

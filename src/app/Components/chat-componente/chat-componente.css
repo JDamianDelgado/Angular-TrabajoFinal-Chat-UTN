@@ -1,24 +1,26 @@
+.contenedorGeneralChat {
+  display: flex;
+  flex-direction: column;
+  height: 98vh;
+  width: 20vw;
+  text-align: center;
+}
 .headerChat button {
   all: unset;
-  font-size: 1.5rem;
+  font-size: 1.5vh;
   background-color: #125aa0;
   padding: 1rem;
   border-radius: 2rem;
   color: white;
-  margin-top: 2rem;
-}
-
-.contenedorGeneralChat {
-  display: flex;
-  flex-direction: column;
-  height: 95vh;
-  justify-content: start;
-  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 1.5vh;
 }
 .listaChats {
   flex: 1;
   overflow-y: scroll;
-  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8vw;
 }
 .listaChats::-webkit-scrollbar {
   background-color: transparent;
@@ -26,26 +28,100 @@
 .contendorContactosChat {
   display: flex;
   cursor: pointer;
-  padding: 0.5rem;
-  height: 4vw;
-  border: solid 1px rgb(106, 156, 106);
-  width: 95%;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  border-top: solid 1px rgb(105, 102, 102);
 }
-.contenedorTexto {
-  display: block;
-  width: 70%;
-  overflow: hidden;
+.contendorContactosChat:hover {
+  background-color: #575555;
+  color: white;
 }
-.contenedorTexto span {
-  width: 80%;
-  overflow: hidden;
-  margin: 1rem;
-}
-img {
+
+.contendorContactosChat img {
+  height: max-content;
+  margin-left: 2%;
   width: 4vw;
   height: 4vw;
   border-radius: 50%;
   margin: 0;
   padding: 0;
   justify-content: start;
+}
+.contenedorTexto {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  padding: 0;
+}
+
+/* tablet */
+@media (max-width: 1024px) {
+  .contenedorGeneralChat {
+    width: 30vw;
+  }
+  .headerChat button {
+    font-size: 1rem;
+  }
+  .listaChats {
+    font-size: 1rem;
+  }
+  .listaChats img {
+    height: 60%;
+    width: 40%;
+  }
+  .contenedorTexto {
+    font-size: 0.8rem;
+  }
+}
+
+/* movil  */
+@media (max-width: 600px) {
+  .contenedorGeneralChat {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .headerChat button {
+    width: 12vw;
+    font-size: 0.6rem;
+    padding: 0.5rem;
+  }
+
+  .listaChats {
+    flex: 1;
+
+    overflow-y: scroll;
+    justify-content: center;
+    align-items: center;
+  }
+  .contendorContactosChat {
+    flex-direction: column;
+    width: 20vw;
+    margin-left: 1rem;
+    text-align: center;
+    height: 12vh;
+  }
+
+  .contendorContactosChat img {
+    width: auto;
+    height: 6vh;
+    margin-left: 0;
+    margin-top: 0.8rem;
+  }
+  .contenedorTexto {
+    margin-left: 0;
+    width: 90%;
+    word-wrap: break-word;
+  }
+  .contenedorTexto h2 {
+    font-size: 0.6rem;
+  }
+  .contenedorTexto span {
+    display: none;
+  }
 }

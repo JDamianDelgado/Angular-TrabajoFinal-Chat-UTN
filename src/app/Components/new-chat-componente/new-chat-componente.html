@@ -1,11 +1,13 @@
-<h2>Nuevo Chat</h2>
-<form (ngSubmit)="create()">
-  <label for="name"> Nombre</label>
-  <input [(ngModel)]="name" name="name" required />
-  <label for="initial">Mensaje inicial</label>
-  <input [(ngModel)]="initial" name="initial" />
-  <div>
-    <button type="submit">Enviar</button>
-    <button type="button" (click)="cancel()">Cancelar</button>
-  </div>
-</form>
+<div class="contenedorFormulario">
+  <h2>Nuevo Chat</h2>
+  <form (ngSubmit)="create()">
+    <label for="name"> Nombre</label>
+    <input [(ngModel)]="name" name="name" required />
+    <label for="initial">Mensaje inicial</label>
+    <input [(ngModel)]="initial" name="initial" />
+    <div>
+      <button type="submit">Enviar</button>
+      <button type="button" (click)="cancel()">Cancelar</button>
+    </div>
+  </form>
+</div>
