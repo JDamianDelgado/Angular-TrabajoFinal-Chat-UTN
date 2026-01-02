@@ -39,7 +39,13 @@
   box-shadow: 0 0 10px black;
 }
 
-@media (max-width: 1024px) and (min-width: 700px) {
+@media (max-width: 3000px) and (min-width: 1024px) {
+  .contenedorFormulario {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 601px) {
   .contenedorFormulario {
     font-size: 1rem;
   }
@@ -58,7 +64,7 @@
     box-shadow: 0 0 10px black;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 600px) and (min-width: 200px) {
   .contenedorFormulario {
     font-size: 0.6rem;
   }

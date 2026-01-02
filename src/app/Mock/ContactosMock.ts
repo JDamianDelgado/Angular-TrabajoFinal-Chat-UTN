@@ -3,7 +3,7 @@ export const CHATS_MOCK = [
     id: '1',
     name: 'Soporte',
     image: 'https://randomuser.me/api/portraits/lego/1.jpg',
-    ultimoMensaje: 'Hola, ¿en qué puedo ayudarte?',
+    ultimoMensaje: '¿Pudiste resolverlo?',
     listaMensajes: [
       {
         id: '1',
@@ -17,13 +17,31 @@ export const CHATS_MOCK = [
         fromMe: false,
         date: '2025-10-12T10:16:00',
       },
+      {
+        id: '18',
+        texto: 'Todavía no, sigue sin llegar',
+        fromMe: true,
+        date: '2025-10-12T10:20:00',
+      },
+      {
+        id: '19',
+        texto: 'Ya lo reviso, dame un minuto',
+        fromMe: false,
+        date: '2025-10-12T10:21:00',
+      },
+      {
+        id: '20',
+        texto: '¿Pudiste resolverlo?',
+        fromMe: false,
+        date: '2025-10-12T10:25:00',
+      },
     ],
   },
   {
     id: '2',
     name: 'Juan Pérez',
     image: 'https://randomuser.me/api/portraits/men/32.jpg',
-    ultimoMensaje: 'Dale, quedamos así 👍',
+    ultimoMensaje: 'Nos hablamos luego',
     listaMensajes: [
       {
         id: '3',
@@ -43,13 +61,31 @@ export const CHATS_MOCK = [
         fromMe: false,
         date: '2025-10-11T18:33:00',
       },
+      {
+        id: '21',
+        texto: 'Llego unos minutos tarde',
+        fromMe: false,
+        date: '2025-10-11T18:40:00',
+      },
+      {
+        id: '22',
+        texto: 'No hay problema',
+        fromMe: true,
+        date: '2025-10-11T18:41:00',
+      },
+      {
+        id: '23',
+        texto: 'Nos hablamos luego',
+        fromMe: false,
+        date: '2025-10-11T18:45:00',
+      },
     ],
   },
   {
     id: '3',
     name: 'María López',
     image: 'https://randomuser.me/api/portraits/women/45.jpg',
-    ultimoMensaje: 'Gracias 😊',
+    ultimoMensaje: 'Después lo vemos',
     listaMensajes: [
       {
         id: '6',
@@ -63,13 +99,25 @@ export const CHATS_MOCK = [
         fromMe: true,
         date: '2025-10-10T09:22:00',
       },
+      {
+        id: '24',
+        texto: 'Gracias 😊',
+        fromMe: false,
+        date: '2025-10-10T09:25:00',
+      },
+      {
+        id: '25',
+        texto: 'Después lo vemos',
+        fromMe: false,
+        date: '2025-10-10T09:30:00',
+      },
     ],
   },
   {
     id: '4',
     name: 'Carlos Gómez',
     image: 'https://randomuser.me/api/portraits/men/76.jpg',
-    ultimoMensaje: 'Perfecto',
+    ultimoMensaje: 'Avisame cualquier cosa',
     listaMensajes: [
       {
         id: '8',
@@ -83,13 +131,25 @@ export const CHATS_MOCK = [
         fromMe: false,
         date: '2025-10-09T14:05:00',
       },
+      {
+        id: '26',
+        texto: 'Entonces queda agendada',
+        fromMe: true,
+        date: '2025-10-09T14:06:00',
+      },
+      {
+        id: '27',
+        texto: 'Avisame cualquier cosa',
+        fromMe: false,
+        date: '2025-10-09T14:07:00',
+      },
     ],
   },
   {
     id: '5',
     name: 'Ana Torres',
     image: 'https://randomuser.me/api/portraits/women/12.jpg',
-    ultimoMensaje: 'Jajaja tal cual',
+    ultimoMensaje: '😂😂',
     listaMensajes: [
       {
         id: '10',
@@ -97,13 +157,25 @@ export const CHATS_MOCK = [
         fromMe: false,
         date: '2025-10-08T21:40:00',
       },
+      {
+        id: '28',
+        texto: 'Mal, no podía parar de reírme',
+        fromMe: true,
+        date: '2025-10-08T21:42:00',
+      },
+      {
+        id: '29',
+        texto: '😂😂',
+        fromMe: false,
+        date: '2025-10-08T21:43:00',
+      },
     ],
   },
   {
     id: '6',
     name: 'Pedro Ruiz',
     image: 'https://randomuser.me/api/portraits/men/54.jpg',
-    ultimoMensaje: 'Nos vemos',
+    ultimoMensaje: 'Buen viaje',
     listaMensajes: [
       {
         id: '11',
@@ -117,13 +189,19 @@ export const CHATS_MOCK = [
         fromMe: false,
         date: '2025-10-07T17:12:00',
       },
+      {
+        id: '30',
+        texto: 'Buen viaje',
+        fromMe: false,
+        date: '2025-10-07T17:15:00',
+      },
     ],
   },
   {
     id: '7',
     name: 'Lucía Fernández',
     image: 'https://randomuser.me/api/portraits/women/88.jpg',
-    ultimoMensaje: 'Ok!',
+    ultimoMensaje: 'Gracias!',
     listaMensajes: [
       {
         id: '13',
@@ -137,13 +215,19 @@ export const CHATS_MOCK = [
         fromMe: false,
         date: '2025-10-06T11:05:00',
       },
+      {
+        id: '31',
+        texto: 'Gracias!',
+        fromMe: false,
+        date: '2025-10-06T11:06:00',
+      },
     ],
   },
   {
     id: '8',
     name: 'Equipo Dev',
     image: 'https://randomuser.me/api/portraits/lego/2.jpg',
-    ultimoMensaje: 'Deploy hecho 🚀',
+    ultimoMensaje: 'Todo funcionando',
     listaMensajes: [
       {
         id: '15',
@@ -151,13 +235,25 @@ export const CHATS_MOCK = [
         fromMe: false,
         date: '2025-10-05T19:00:00',
       },
+      {
+        id: '32',
+        texto: 'Monitoreando logs',
+        fromMe: true,
+        date: '2025-10-05T19:05:00',
+      },
+      {
+        id: '33',
+        texto: 'Todo funcionando',
+        fromMe: false,
+        date: '2025-10-05T19:10:00',
+      },
     ],
   },
   {
     id: '9',
     name: 'Mamá',
     image: 'https://randomuser.me/api/portraits/women/60.jpg',
-    ultimoMensaje: 'Avisame cuando llegues',
+    ultimoMensaje: '❤️',
     listaMensajes: [
       {
         id: '16',
@@ -165,19 +261,143 @@ export const CHATS_MOCK = [
         fromMe: false,
         date: '2025-10-04T22:30:00',
       },
+      {
+        id: '34',
+        texto: 'Ya llegué',
+        fromMe: true,
+        date: '2025-10-04T22:45:00',
+      },
+      {
+        id: '35',
+        texto: '❤️',
+        fromMe: false,
+        date: '2025-10-04T22:46:00',
+      },
     ],
   },
   {
     id: '10',
     name: 'Banco',
     image: 'https://randomuser.me/api/portraits/lego/3.jpg',
-    ultimoMensaje: 'Su operación fue exitosa',
+    ultimoMensaje: 'Gracias por operar con nosotros',
     listaMensajes: [
       {
         id: '17',
         texto: 'Su operación fue exitosa',
         fromMe: false,
         date: '2025-10-03T08:00:00',
+      },
+      {
+        id: '36',
+        texto: 'Gracias por operar con nosotros',
+        fromMe: false,
+        date: '2025-10-03T08:01:00',
+      },
+    ],
+  },
+  {
+    id: '11',
+    name: 'Agustín Morales',
+    image: 'https://randomuser.me/api/portraits/men/90.jpg',
+    ultimoMensaje: 'Ya te paso el link',
+    listaMensajes: [
+      {
+        id: '18',
+        texto: '¿Tenés el repo?',
+        fromMe: true,
+        date: '2025-10-14T09:10:00',
+      },
+      {
+        id: '19',
+        texto: 'Ya te paso el link',
+        fromMe: false,
+        date: '2025-10-14T09:12:00',
+      },
+    ],
+  },
+  {
+    id: '12',
+    name: 'Florencia Díaz',
+    image: 'https://randomuser.me/api/portraits/women/34.jpg',
+    ultimoMensaje: 'Perfecto, gracias 💙',
+    listaMensajes: [
+      {
+        id: '20',
+        texto: '¿Podemos mover la call?',
+        fromMe: false,
+        date: '2025-10-15T16:40:00',
+      },
+      {
+        id: '21',
+        texto: 'Sí, no hay problema',
+        fromMe: true,
+        date: '2025-10-15T16:42:00',
+      },
+      {
+        id: '22',
+        texto: 'Perfecto, gracias 💙',
+        fromMe: false,
+        date: '2025-10-15T16:43:00',
+      },
+    ],
+  },
+  {
+    id: '13',
+    name: 'Trabajo',
+    image: 'https://randomuser.me/api/portraits/lego/4.jpg',
+    ultimoMensaje: 'Reunión a las 10',
+    listaMensajes: [
+      {
+        id: '23',
+        texto: 'Reunión a las 10',
+        fromMe: false,
+        date: '2025-10-16T08:00:00',
+      },
+    ],
+  },
+  {
+    id: '14',
+    name: 'Nico',
+    image: 'https://randomuser.me/api/portraits/men/18.jpg',
+    ultimoMensaje: 'Llegué bien!',
+    listaMensajes: [
+      {
+        id: '24',
+        texto: 'Avisá cuando llegues',
+        fromMe: true,
+        date: '2026-01-01T00:10:00',
+      },
+      {
+        id: '25',
+        texto: 'Llegué bien!',
+        fromMe: false,
+        date: '2026-01-01T00:10:00',
+      },
+    ],
+  },
+  {
+    id: '15',
+    name: 'Cliente Web',
+    image: 'https://randomuser.me/api/portraits/lego/5.jpg',
+    ultimoMensaje: 'Quedó aprobado',
+    listaMensajes: [
+      {
+        id: '26',
+        texto: '¿Está listo el cambio?',
+        fromMe: false,
+        date: '2025-10-17T11:00:00',
+      },
+      {
+        id: '27',
+        texto: 'Sí, ya lo subí',
+        fromMe: true,
+        date: '2026-01-01T00:10:00',
+      },
+      {
+        id: '28',
+        texto: 'Quedó aprobado',
+        fromMe: false,
+        date: '2026-01-01T00:10:00',
       },
     ],
   },

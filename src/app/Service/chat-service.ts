@@ -7,7 +7,17 @@ import { CHATS_MOCK } from '../Mock/ContactosMock';
   providedIn: 'root',
 })
 export class ChatService {
-  private _chats: WritableSignal<Chat[]> = signal(this.createMook());
+  private _chats: WritableSignal<Chat[]> = signal(this.ordenMensajes(this.createMook()));
+
+  private ultimoMensaje(chat: Chat): number {
+    if (!chat.listaMensajes.length) return 0;
+
+    const lastMessage = chat.listaMensajes.at(-1);
+    return new Date(lastMessage!.date).getTime();
+  }
+  private ordenMensajes(chats: Chat[]): Chat[] {
+    return chats.sort((a, b) => this.ultimoMensaje(b) - this.ultimoMensaje(a));
+  }
 
   constructor() {}
 
