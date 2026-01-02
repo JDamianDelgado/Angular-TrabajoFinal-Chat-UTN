@@ -9,6 +9,12 @@
   overflow: auto;
 }
 
+.BienvenidaTexto {
+  display: flex;
+  font-size: 5vw;
+  color: rgb(54, 51, 51);
+  justify-content: center;
+}
 /* barra superior  */
 .BarraContactoChat {
   display: flex;
