@@ -401,4 +401,135 @@ export const CHATS_MOCK = [
       },
     ],
   },
+
+  {
+    id: '16',
+    name: 'Sofía Romero',
+    image: 'https://randomuser.me/api/portraits/women/22.jpg',
+    ultimoMensaje: 'Feliz año 🎉',
+    listaMensajes: [
+      {
+        id: '100',
+        texto: '¿Pasás año nuevo en casa?',
+        fromMe: false,
+        date: '2025-12-31T18:20:00',
+      },
+      {
+        id: '101',
+        texto: 'Sí, tranqui con la familia',
+        fromMe: true,
+        date: '2025-12-31T18:22:00',
+      },
+      {
+        id: '102',
+        texto: 'Feliz año 🎉',
+        fromMe: false,
+        date: '2026-01-01T00:01:00',
+      },
+    ],
+  },
+  {
+    id: '17',
+    name: 'Grupo Amigos',
+    image: 'https://randomuser.me/api/portraits/lego/6.jpg',
+    ultimoMensaje: 'Arrancamos el asado 🔥',
+    listaMensajes: [
+      {
+        id: '103',
+        texto: '¿A qué hora nos juntamos?',
+        fromMe: false,
+        date: '2025-12-30T19:00:00',
+      },
+      {
+        id: '104',
+        texto: 'Tipo 21 está bien',
+        fromMe: true,
+        date: '2025-12-30T19:05:00',
+      },
+      {
+        id: '105',
+        texto: 'Arrancamos el asado 🔥',
+        fromMe: false,
+        date: '2025-12-30T21:10:00',
+      },
+    ],
+  },
+  {
+    id: '18',
+    name: 'Laura Medina',
+    image: 'https://randomuser.me/api/portraits/women/41.jpg',
+    ultimoMensaje: 'Después lo vemos',
+    listaMensajes: [
+      {
+        id: '106',
+        texto: '¿Terminaste el informe?',
+        fromMe: false,
+        date: '2025-12-15T10:00:00',
+      },
+      {
+        id: '107',
+        texto: 'Me falta un detalle',
+        fromMe: true,
+        date: '2025-12-15T10:10:00',
+      },
+      {
+        id: '108',
+        texto: 'Después lo vemos',
+        fromMe: false,
+        date: '2025-12-15T10:15:00',
+      },
+    ],
+  },
+  {
+    id: '19',
+    name: 'Gym',
+    image: 'https://randomuser.me/api/portraits/lego/7.jpg',
+    ultimoMensaje: 'Clase confirmada 💪',
+    listaMensajes: [
+      {
+        id: '109',
+        texto: '¿Hay clase mañana?',
+        fromMe: true,
+        date: '2026-01-02T08:30:00',
+      },
+      {
+        id: '110',
+        texto: 'Sí, horario normal',
+        fromMe: false,
+        date: '2026-01-02T08:35:00',
+      },
+      {
+        id: '111',
+        texto: 'Clase confirmada 💪',
+        fromMe: false,
+        date: '2026-01-02T08:36:00',
+      },
+    ],
+  },
+  {
+    id: '20',
+    name: 'Papá',
+    image: 'https://randomuser.me/api/portraits/men/65.jpg',
+    ultimoMensaje: 'Avisame cuando llegues',
+    listaMensajes: [
+      {
+        id: '112',
+        texto: '¿Llegaste bien?',
+        fromMe: false,
+        date: '2025-12-29T23:40:00',
+      },
+      {
+        id: '113',
+        texto: 'Sí, todo ok',
+        fromMe: true,
+        date: '2025-12-29T23:42:00',
+      },
+      {
+        id: '114',
+        texto: 'Avisame cuando llegues',
+        fromMe: false,
+        date: '2025-12-29T23:43:00',
+      },
+    ],
+  },
 ];
