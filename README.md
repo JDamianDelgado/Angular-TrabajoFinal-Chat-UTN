@@ -1,59 +1,55 @@
-# ClonChatAngular
+# 📘 Trabajo Final Integrador – Angular - Módulo 1 | Unidad 4
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.3.
+Este proyecto corresponde al **Trabajo Final Integrador de la Unidad 4 del Módulo 1** de la Diplomatura Full Stack.
 
-## Development server
+Se desarrolló un **simulador de chat** utilizando una arquitectura basada en **componentes, servicios y pipes**, donde estos últimos se emplean para mostrar información como la **última conexión** y la **fecha de los mensajes**. Además, la aplicación permite la **creación de nuevos chats** y la **asignación de imágenes mediante una URL genérica** y permite **buscar** el chat por el nombre.
 
-To start a local development server, run:
+Para el diseño visual, se utilizaron **plantillas CSS individuales por componente**, permitiendo una mejor organización y mantenimiento de estilos.  
+La **base de datos** está representada mediante un **mock con datos precargados**, lo que facilita la simulación del funcionamiento del sistema sin necesidad de un backend real.
 
-```bash
-ng serve
+Los distintos componentes fueron unificados a través de un **componente Layout**, con el objetivo de ofrecer una **interfaz clara y amigable para el usuario**.  
+Además, la aplicación fue desarrollada con **diseño responsive**, adaptándose correctamente a diferentes dispositivos y tamaños de pantalla.
+
+Finalmente, el proyecto fue **desplegado en la plataforma Vercel**, permitiendo su visualización y acceso en línea.
+
+---
+
+## Como ver el proyecto
+
+1. Clonar repositorio
+
+```
+ git clone https://github.com/JDamianDelgado/Angular-TrabajoFinal-Chat-UTN.git
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+2. Instalar dependencias
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+npm install
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+3. Ejecutar el Proyecto
 
-```bash
-ng generate --help
+```
+npm run start
 ```
 
-## Building
+El proyecto debe correr localmente en 'http://localhost:4200/' por defecto
 
-To build the project run:
+Desplegado en : [Vercel](https://angular-trabajo-final-chat-utn.vercel.app/)
 
-```bash
-ng build
-```
+## Autor
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Nombre: Joaquín Damián Delgado
 
-## Running unit tests
+Curso: Diplomatura Full Stack
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Unidad: Módulo 1 – Unidad 4 - Angular
 
-```bash
-ng test
-```
+Fecha: Enero 2026
 
-## Running end-to-end tests
+## Capturas
 
-For end-to-end (e2e) testing, run:
+### Pantalla Responsive
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+![alt yes](./public/responsive.png)
